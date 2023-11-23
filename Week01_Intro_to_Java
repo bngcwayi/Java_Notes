@@ -326,6 +326,30 @@ Syntax
 	If the value of exp1 is false, then Exp3 is evaluated and its value becomes the value of the entire expression.
 
 DAY 5:JAVA MODIFIERS
+	Java Identifiers
+	In Java, identifiers are names given to various program elements such as classes, variables, methods, and labels. 
+	Identifiers serve as the means to uniquely identify and distinguish these elements within a Java program.
+	Identifiers are the names of variables, methods, classes, packages and interfaces. Unlike literals they are not the things themselves, just ways of referring to them. 
+	In the HelloWorld program, HelloWorld,  args, main and println are identifiers.
+	 
+Composition of Identifiers:
+	Characters Allowed: Identifiers in Java can be composed of letters (a-z, A-Z), numbers (0-9), the underscore (_), and the dollar sign ($).
+	Starting Character: Identifiers must begin with a letter, underscore, or dollar sign.
+CamelCase Convention:
+	Definition: CamelCase is a naming convention where compound words or phrases are written such that each word or abbreviation begins with a capital letter (except the first word, which starts with a lowercase letter).
+	Example: myVariableName, calculateTotalAmount, employeeDetails
+
+
+Java Modifiers:
+	Definition: Modifiers in Java are keywords that modify the meanings of identifiers such as classes, methods, variables, etc.
+	Types of Modifiers:
+	Java Access Modifiers: Control the visibility of classes, methods, and variables. Examples include public, private, protected.
+	Non-Access Modifiers: Provide additional information about classes, methods, and variables. Examples include static, final, abstract.
+Usage of Modifiers:
+	Application: Modifiers are used by including their keyword in the definition of a class, method, or variable. They precede the rest of the statement.
+	 
+	In summary, identifiers in Java follow specific rules regarding their composition, and CamelCase is a common naming convention. Modifiers, both access and non-access, are keywords that can be applied to identifiers to modify their behavior or visibility in a Java program. Using these conventions and modifiers helps in writing clear, readable, and maintainable code.
+
 
 
 
