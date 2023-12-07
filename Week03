@@ -1,0 +1,307 @@
+Software_Development_Life_Cycle_Week03_04-08-Dec2023
+
+DAY1:
+
+Day 1 - SDLC Overview and Introduction
+	There are  7 phases and important models in software development. 
+	These models will help you in software quality control, meeting project deadlines and delivering best and robust software applications.
+
+What is SDLC?
+	SDLC is the acronym of Software Development Life Cycle.
+	The software development lifecycle (SDLC) is the cost-effective and time-efficient process that development teams use to design and build high-quality software. 
+	The goal of SDLC is to minimize project risks through forward planning so that software meets customer expectations during production and beyond. 
+	This methodology outlines a series of steps that divide the software development process into tasks you can assign, complete, and measure
+	SDLC is a framework defining tasks performed at each step in the software development process.
+	A systematic approach that generates a structure for the developer to design, create and deliver high-quality software based on customer requirements and needs.
+	 The primary goal of the SDLC process is to produce cost-efficient and high-quality products. 
+	The process comprises a detailed plan that describes how to develop, maintain, and replace the software.
+The Seven Phases of the SDLC
+1.	Requirements Analysis/Planning
+	Involves project and product management
+	Resource allocation both human and materials
+	Capacity planning, project scheduling, cost estimation and provisioning
+	The outputs of the planning phase include: project plans, schedules, cost estimations, and procurement requirements. Ideally, Project Managers and Development staff collaborate with Operations and Security teams to ensure all perspectives are represented.
+2.	Defining/Feasibility
+	The business must communicate with IT teams to convey their requirements for new development and enhancement. The requirements phase gathers these requirements from business stakeholders and Subject Matter Experts (SMEs.)
+	There are mainly five types of feasibility checks:
+	Economic: Can we complete the project within the budget or not?
+	Legal: Can we handle this project as cyber law and other regulatory framework/compliance.
+	Operation feasibility: Can we create operations which is expected by the client?
+	Technical: Need to check whether the current computer system can support the software
+	Schedule: Decide that the project can be completed within the given schedule or not.
+	Architects, Development teams, and Product Managers work with the SMEs to document the business processes that need to be automated through software. The output of this phase in a Waterfall project is usually a document that lists these requirements. Agile methods, by contrast, may produce a backlog of tasks to be performed.
+
+3.	Design and prototyping
+	Once the requirements are understood, software architects and developers can begin to design the software. 
+	This phase may also include some rapid prototyping, also known as a spike, to compare solutions to find the best fit. 
+	The output of this phase includes:
+	Design documents that list the patterns and components selected for the project
+	Code produced by spikes, used as a starting point for development
+	There are two kinds of design documents developed in this phase:
+High-Level Design (HLD)
+	Brief description and name of each module
+	An outline about the functionality of every module
+	Interface relationship and dependencies between modules
+	Database tables identified along with their key elements
+	Complete architecture diagrams along with technology details
+Low-Level Design (LLD)
+	Functional logic of the modules
+	Database tables, which include type and size
+	Complete detail of the interface
+	Addresses all types of dependency issues
+	Listing of error messages
+	Complete input and outputs for every module
+4.Coding/Software development
+	This phase produces the software under development. 
+	Depending on the methodology, this phase may be conducted in time-boxed “sprints,” (Agile) or may proceed as a single block of effort (Waterfall.)
+	 Regardless of methodology, development teams should produce working software as quickly as possible. Business stakeholders should be engaged regularly, to ensure that their expectations are being met. 
+	The output of this phase is testable, functional software.
+5.Testing
+o	Once the developers build the software, then it is deployed in the testing environment. 
+o	Then the testing team tests the functionality of the entire system.
+o	 In this fifth phase of SDLC, the testing is done to ensure that the entire application works according to the customer requirements.
+o	The testing phase of the SDLC is arguably one of the most important. It is impossible to deliver quality software without testing. There is a wide variety of testing necessary to measure quality:
+
+o	Code quality
+o	Unit testing (functional tests)
+o	Integration testing
+o	Performance testing
+o	Security testing
+o	The best way to ensure that tests are run regularly, and never skipped for expediency, is to automate them. 
+o	Tests can be automated using Continuous Integration tools, like Codeship, for example. 
+o	The output of the testing phase is functional software, ready for deployment to a production environment.
+6.Deployment
+	Once the testing is done, and the product is ready for deployment, it is released for customers to use. 
+	The size of the project determines the complexity of the deployment. The users are then provided with the training or documentation that will help them to operate the software.  Again, a small round of testing is performed on production to ensure environmental issues or any impact of the new release.
+	Automation: Ideally, the deployment phase is highly automated. In mature enterprises, this phase is seamless and nearly invisible, with software being deployed instantly when ready.
+	Maturity Levels: Higher maturity enterprises automate the deployment process, making it efficient and reducing manual interventions. In contrast, less mature enterprises or those in highly regulated industries may require some manual approvals during deployment.
+	Continuous Deployment Model: Even in cases involving manual approvals, the deployment itself is recommended to be fully automated, especially in a continuous deployment model.
+	Application Release Automation (ARA): Medium and large-size enterprises use ARA tools to automate the deployment of applications to production environments. These tools are often integrated with Continuous Integration tools.
+	Output: The output of the deployment phase is the release of working software to the production environment.
+7.Operations and Maintenance
+•	Continuous Monitoring: This phase is described as the "end of the beginning," emphasizing that the Software Development Life Cycle continues. Software must be constantly monitored to ensure proper operation in the production environment.
+•	Issue Reporting and Response: Bugs and defects discovered in the production environment must be reported and addressed. This feedback loop often results in additional work that feeds back into the development process.
+•	Regression Testing: Bug fixes may not follow the entire development cycle, but at least a streamlined process is necessary to ensure that fixing one issue does not introduce new problems, known as regression.
+•	Life Cycle Continuation: The operations and maintenance phase underscores that the software development life cycle is ongoing, and the development team must remain vigilant in monitoring, addressing issues, and maintaining the software in a production environment.
+
+Day 2 - Popular SDLC models
+1.V-MODEL
+	The V-model is a type of SDLC model where the process executes in a sequential manner in a V-shape. 
+	It is also known as the Verification and Validation model.
+	The development of each step is directly associated with the testing phase. The next phase starts only after completion of the previous phase i.e., for each development activity, there is a testing activity corresponding to it.
+	Under the V-Model, the corresponding testing phase of the development phase is planned in parallel. 
+	So, there are Verification phases on one side of the ‘V’ and Validation phases on the other side. The Coding Phase joins the two sides of the V-Model.
+	 
+	Business Requirement Analysis:
+	Objective: Understand product requirements from the customer's perspective.
+	Activity: Engage in detailed communication with the customer to grasp expectations and exact requirements.
+	Importance: Critical, as customers may not be entirely certain about their needs.
+	Outcome: Business requirements are gathered and used as input for acceptance testing. Acceptance test design planning is initiated in this phase.
+	System Design:
+	Trigger: Clear and detailed product requirements from the business requirement analysis.
+	Objective: Design the complete system, including hardware and communication setup.
+	Advantage: Early development of the system test plan, allowing more time for actual test execution.
+	Outcome: A comprehensive system design that serves as the foundation for subsequent development stages.
+	Architectural Design:
+	Scope: Understanding and designing architectural specifications.
+	Approach: Propose multiple technical approaches; make the final decision based on technical and financial feasibility.
+	Breakdown: System design is broken down into modules, known as High-Level Design (HLD).
+	Focus: Data transfer and communication between internal modules and external systems are defined.
+	Outcome: Clear understanding of the system's architecture, facilitating the design of integration tests. This phase is also crucial for documenting HLD.
+	Module Design:
+	Detailing: Detailed internal design for all system modules specified in Low-Level Design (LLD).
+	Compatibility: Ensure design compatibility with other modules in the system architecture and external systems.
+	Testing: Develop unit tests, essential for identifying and rectifying faults and errors at an early stage.
+	Outcome: Well-defined internal module designs, paving the way for subsequent development stages. The unit tests designed in this phase contribute to early error detection and correction.
+	In summary, these phases represent a systematic progression in the software development life cycle, starting from understanding customer requirements to detailed design specifications. The emphasis on early planning, clear communication with customers, and systematic design helps ensure a structured and effective development process.
+2.SPIRAL-MODEL
+	The Spiral Model is one of the most important Software Development Life Cycle models, which provides support for Risk Handling
+	it looks like a spiral with many loops.
+	Each loop of the spiral is called a Phase of the software development process.
+	The Spiral Model is a Software Development Life Cycle (SDLC) model that provides a systematic and iterative approach to software development. 
+	It is based on the idea of a spiral, with each iteration of the spiral representing a complete software development cycle, from requirements gathering and analysis to design, implementation, testing, and maintenance.
+	 
+	Characteristics: Risk-driven process model combining elements of various SDLC models.
+	Approach: Adopts features from the prototyping model and the waterfall model.
+	Methodology: A combination of rapid prototyping and concurrency in design and development activities.
+	Phases in the Spiral Model:
+	Identification:
+	Objective: Gather business requirements in the baseline spiral.
+	Evolution: System, subsystem, and unit requirements identified in subsequent spirals.
+	Communication: Continuous communication with the customer to understand evolving requirements.
+	Outcome: Product deployment in the identified market at the end of the spiral.
+	Design:
+	Start: Conceptual design in the baseline spiral.
+	Evolution: Architectural design, logical design of modules, physical product design, and final design in subsequent spirals.
+	Outcome: Comprehensive system design providing a foundation for development.
+	Construct or Build:
+	Process: Production of the actual software product at every spiral.
+	Baseline: Proof of Concept (POC) in the baseline spiral for initial customer feedback.
+	Evolution: Subsequent spirals involve building working models (builds) with version numbers for customer feedback.
+	Evaluation and Risk Analysis:
+	Risk Analysis: Identifying, estimating, and monitoring technical feasibility and management risks.
+	Feedback: Customer evaluates the software at the end of the first iteration and provides feedback.
+
+3. Big Bang Model:
+	Focus: Emphasizes coding and development with minimal planning.
+	Suitability: Ideal for small projects, academic software development, or scenarios where requirements are unknown.
+	Pros and Cons:
+	Advantages:
+	Simple and requires little or no planning.
+	Easy to manage with no formal procedures.
+	Provides flexibility to developers.
+	Suitable for repetitive or small projects with minimal risks.
+	Good learning aid for newcomers or students.
+	Disadvantages:
+	Very high risk and uncertainty.
+	Not suitable for complex and object-oriented projects.
+	Poor model for long and ongoing projects.
+	Can be expensive if requirements are misunderstood.
+4. Waterfall Model:
+	SDLC Approach: Divides the software development process into various phases.
+	Process Flow: Follows a rigid, sequential path through phases.
+	Drawback: Lacks flexibility and may not adapt well to changing requirements.
+	Advantages:
+	Simple and easy to understand.
+	Easy to manage due to the rigidity of the model.
+	Works well for smaller projects with well-understood requirements.
+	Clearly defined stages and milestones.
+	Tasks are easy to arrange and process/results are well-documented.
+	Disadvantages:
+	Lack of flexibility in adapting to changing requirements.
+	Limited feedback during the development process.
+	Potentially leads to implementation of outdated or incorrect requirements.
+	May not be suitable for large and complex projects.
+
+Day 3 – MORE SDLC models
+AGILE MODEL
+	Agile methodology is a practice that promotes continuous interaction between development and testing throughout the Software Development Life Cycle (SDLC) process of any project. 
+	It is a software development methodology that focuses on flexibility, collaboration, and efficiency, allowing teams to deliver quality products .
+	In the Agile method, the entire project is divided into small incremental builds. These builds are provided in iterations, with each iteration lasting from one to three weeks. This iterative approach allows for regular feedback and adaptation, enabling teams to respond to changing requirements and make adjustments to the development effort as needed .
+
+	The Manifesto for Agile Software Development was drafted and signed by a group of software developers in 2001. It addresses key problems with the Waterfall methodology, which was the de-facto standard for development methods at the time. The Manifesto emphasizes the contrast between Waterfall and Agile, highlighting Agile's flexibility and ability to handle uncertainty. It promotes teamwork, prototyping, and feedback loops that can change the direction of the development effort in response to changing requirements.
+	Since the signing of the Manifesto, several variants of Agile have emerged. Two popular variants are Scrum and Kanban. 
+	Scrum defines specific roles and events, known as ceremonies, as part of its practice. 
+	Kanban, on the other hand, is simpler and offers more flexibility with fewer prescriptions. Agile teams often combine these variants to adapt a bespoke process that fits their specific needs and preferences.
+	Overall, Agile methodology provides a more flexible and iterative approach to software development, allowing teams to deliver quality products while adapting to changing requirements and uncertainties
+Following are the Agile Manifesto principles
+	Individuals and interactions − In Agile development, self-organization and motivation are important, as are interactions like co-location and pair programming.
+	Working software − Demo working software is considered the best means of communication with the customers to understand their requirements, instead of just depending on documentation.
+	Customer collaboration − As the requirements cannot be gathered completely in the beginning of the project due to various factors, continuous customer interaction is very important to get proper product requirements.
+	Responding to change − Agile Development is focused on quick responses to change and continuous development.
+Agile Model - Pros and Cons
+	Agile methods are being widely accepted in the software world recently. However, this method may not always be suitable for all products. Here are some pros and cons of the Agile model.
+The advantages of the Agile Model are as follows 
+	Is a very realistic approach to software development.
+	Promotes teamwork and cross training.
+	Functionality can be developed rapidly and demonstrated.
+	Resource requirements are minimum.
+	Suitable for fixed or changing requirements
+	Delivers early partial working solutions.
+	Good model for environments that change steadily.
+	Minimal rules, documentation easily employed.
+	Enables concurrent development and delivery within an overall planned context.
+	Little or no planning required.
+	Easy to manage.
+	Gives flexibility to developers.
+
+The disadvantages of the Agile Model are as follows 
+	Not suitable for handling complex dependencies.
+	More risk of sustainability, maintainability and extensibility.
+	An overall plan, an agile leader and agile PM practice is a must without which it will not work.
+	Strict delivery management dictates the scope, functionality to be delivered, and adjustments to meet the deadlines.
+	Depends heavily on customer interaction, so if customer is not clear, team can be driven in the wrong direction.
+	There is a very high individual dependency, since there is minimum documentation generated.
+	Transfer of technology to new team members may be quite challenging due to lack of documentation.
+A quick summary on SDLC
+o	The SDLC is a systematic process for building software that ensures the quality and correctness of the software built
+o	The full form SDLC is Software Development Lifecycle.
+o	SDLC process provides a framework for a standard set of activities and deliverables
+o	Seven different SDLC stages are 1) Requirement collection and analysis 2) Feasibility study: 3) Design 4) Coding 5) Testing: 6) Installation/Deployment and 7) Maintenance
+o	The senior team members conduct the requirement analysis phase
+o	Feasibility Study stage includes everything which should be designed and developed during the project life cycle
+o	In the Design phase, the system and software design documents are prepared as per the requirement specification document
+o	In the coding phase, developers start build the entire system by writing code using the chosen programming language
+o	Testing is the next phase which is conducted to verify that the entire application works according to the customer requirement.
+o	Installation and deployment face begin when the software testing phase is over, and no bugs or errors left in the system
+o	Bug fixing, upgrade, and engagement actions covered in the maintenance face
+o	Waterfall, Incremental, Agile, V model, Spiral, Big Bang are some of the popular SDLC models
+o	SDLC consists of a detailed plan which explains how to plan, build, and maintain specific software
+
+
+Day 4 - What is Software Prototyping in SDLC?
+Software Prototyping:
+	Software prototyping is the process of creating a working model of a software system to demonstrate its features, functionality, and design to stakeholders. 
+	This model, known as a prototype, is used for user evaluation, feedback collection, and refining requirements before the actual development of the software.
+	Steps in Software Prototyping:
+	Basic Requirement Identification:
+	Objective: Understand basic product requirements, especially related to the user interface.
+	Scope: Intricate details of internal design and external aspects like performance and security are not considered at this stage.
+	Developing the Initial Prototype:
+	Task: Create the initial prototype showcasing basic requirements and user interfaces.
+	Implementation: Workarounds may be used to simulate the desired look and feel, even if internal functionalities differ from the actual software.
+	Review of the Prototype:
+	Audience: Present the prototype to customers and other stakeholders for evaluation.
+	Outcome: Collect feedback systematically for further enhancements.
+	Revise and Enhance the Prototype:
+	Analysis: Discuss feedback and review comments, negotiate changes based on time, budget, and technical feasibility.
+	Iteration: Incorporate accepted changes into a new prototype; repeat until customer expectations are met.
+Types of Prototypes:
+	Horizontal Prototype: Displays the user interface, providing a broad view of the entire system without focusing on internal functions.
+	Vertical Prototype: Elaborates on a specific function or subsystem, offering detailed insight into the functioning of that part.
+Types of Software Prototyping:
+1.Throwaway/Rapid Prototyping:
+	Characteristics: Minimum requirement analysis, prototype is discarded once actual requirements are understood.
+2.Evolutionary Prototyping:
+	Approach: Builds actual functional prototypes with minimal functionality initially, serving as the foundation for future prototypes.
+3.Incremental Prototyping:
+	Process: Builds multiple functional prototypes for various subsystems, integrates them to form a complete system.
+	Extreme Prototyping:
+	Domain: Primarily used in web development.
+	Phases: Involves three sequential phases: basic prototype, simulated data processing, and implementation of services.
+Applications of Software Prototyping:
+•	Software Prototyping is most useful in development of systems having high level of user interactions such as online systems. Systems which need users to fill out forms or go through various screens before data is processed can use prototyping very effectively to give the exact look and feel even before the actual software is developed.
+•	Software that involves too much of data processing and most of the functionality is internal with very little user interface does not usually benefit from prototyping. Prototype development could be an extra overhead in such projects and may need lot of extra efforts.
+Best Practices of Prototyping:
+	Use Prototyping When Requirements are Unclear:
+	Particularly effective when initial requirements are unclear or subject to change.
+	Planned and Controlled Prototyping:
+	Implement prototyping in a planned and controlled manner to avoid costly delays.
+	Regular Meetings:
+	Vital for keeping the project on time and ensuring effective communication.
+	Approval before Progressing:
+	A prototype should be approved early on before allowing the team to move to the next development step.
+	Readiness to Change Decisions:
+	Do not hesitate to change earlier decisions if new ideas need to be deployed.
+	Appropriate Step Size:
+	Select the right step size for each version of the prototype.
+	Implement Important Features Early:
+	Include critical features early in development to ensure a worthwhile system even if time runs out.
+Advantages of the Prototyping Model:
+	User Involvement: Active involvement of users in development, leading to early error detection.
+	Risk Reduction: Identification of missing functionality, reducing the risk of project failure.
+	Effective Communication: Facilitates effective communication among team members.
+	Customer Satisfaction: Early customer satisfaction as they can experience the product at an early stage.
+	Quick User Feedback: Rapid feedback for better development solutions.
+	Comparison with Specifications: Allows clients to compare software code with specifications.
+	Identifying Missing Functionality: Helps identify missing functionalities.
+	Encourages Innovation: Encourages innovation and flexible design.
+	Straightforward Model: Easy to understand with minimal need for specialized experts.
+Disadvantages of the Prototyping Model:
+	Time-Consuming: Prototyping can be slow and time-consuming.
+	Waste of Resources: The cost of developing a prototype may be a total waste as it is eventually discarded.
+	Change Requests: May encourage excessive change requests.
+	Customer Participation: Customers may not be willing to participate in the iteration cycle for extended periods.
+	Variations in Requirements: Far too many variations in software requirements may result from frequent evaluations.
+	Poor Documentation: Poor documentation due to changing customer requirements.
+	Challenges for Developers: Difficult for developers to accommodate all changes demanded by clients.
+	Loss of Interest: Clients may lose interest if not satisfied with the initial prototype.
+	Sub-Standard Solutions: Quick prototyping may lead to sub-standard development solutions.
+	In conclusion, software prototyping is a valuable practice for projects with evolving or unclear requirements. It offers advantages in terms of early user involvement, risk reduction, and effective communication, but it comes with challenges such as resource wastage, potential for excessive change requests, and the need for careful management of customer expectations.
+A quick Summary on Software Prototyping
+•	In Software Engineering, Prototype methodology is a software development model in which a prototype is built, test and then reworked when needed until an acceptable prototype is achieved.
+•	Requirements gathering and analysis, 2) Quick design, 3) Build a Prototype, 4) Initial user evaluation, 5) Refining prototype, 6)Implement Product and Maintain; are 6 steps of the prototyping process
+•	Type of prototyping models are 1) Rapid Throwaway prototypes 2) Evolutionary prototype 3) Incremental prototype 4) Extreme prototype
+•	Regular meetings are essential to keep the project on time and avoid costly delays in prototyping approach.
+•	Missing functionality can be identified, which helps to reduce the risk of failure as Prototyping is also considered as a risk reduction activity in SDLC.
+•	Prototyping may encourage excessive change requests
