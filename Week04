@@ -1,0 +1,354 @@
+ERRORS_IN_JAVA_Week04_11-14-Dec_2023
+
+DAY1 :COMPILE TIME/SYNTAX ERROR
+
+	Whereas exceptions in java refer to an unwanted or unexpected event, which occurs during the execution of a program i.e at run time, that disrupts the normal flow of the program’s instructions.
+	Errors are classified into 3 categories:
+	Complier Errors
+	Runtime Errors 
+	Logic Errors
+	In Java errors occurs when your program fails to compile or program crashes when executing or the program doesn’t produce the desired results.
+Compile Errors /Syntax Errors
+	Compiler as a Translator:
+	The compiler is likened to a translator that converts human-readable Java code into machine-readable Java bytecode. This process is essential for the computer to execute the program.
+	Example of Untranslatable Text:
+	The analogy uses the example of asking a translator to translate a nonsensical string like "giberderrmishdbed" from English to French. The translator can't proceed because the input is not a valid word in the language. Similarly, the compiler can't translate code that doesn't conform to the rules of the Java language.
+	Syntax Errors as Compiler Errors:
+	Compiler errors are equated with syntax errors. Syntax refers to the set of rules that dictate the correct structure and format of the code in a programming language. When your code violates these rules, the compiler encounters difficulty translating it into bytecode.
+	Violation of Language Rules:
+	Compiler errors can occur for various reasons, such as forgetting semicolons or misspelling variables. Additionally, they can result from breaking fundamental language rules. An example mentioned is attempting to use a non-static variable from a static function, which is against the rules of Java.
+	In summary, the analogy of a translator refusing to translate nonsensical text helps convey the idea that compiler errors, or syntax errors, occur when the code does not adhere to the syntax rules of the programming language. This emphasizes the importance of writing code that follows the correct structure and format specified by the language to enable successful translation by the compiler.
+RUNTIME  ERRORS
+	A runtime error occurs during the execution of a program and disrupts the normal flow, leading to abnormal termination. 
+	These errors need to be handled to prevent program crashes. 
+	Runtime errors can result from various scenarios, including user input errors, file not found, network issues, or insufficient memory. 
+	They are not detected by the compiler and only manifest during program execution.
+
+Exception Handling:
+	A runtime error (or exceptional event) is a problem that arises during the execution of a program. 
+	When a runtime error occurs, the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, a runtime errors are to be handled so as to avoid program/application crash.
+	Exception handling is a mechanism to manage runtime errors, preventing catastrophic failure and maintaining the normal flow of the application.
+	Following are some scenarios where a runtime error occurs.
+	A user has entered an invalid data.
+	A file that needs to be opened cannot be found.
+	A network connection has been lost in the middle of communications or the JVM has run out of memory.
+	Some of these exceptions are caused by user error, others by programmer error, and others by physical resources that have failed in some manner.
+	Runtime errors are not picked by the compiler, hence can only occur when running/executing the program.
+	
+Ways to Handle Exceptions:
+	Java try block:
+	Encloses code that might throw an exception.
+	If an exception occurs, the rest of the block won't execute.
+	Must be followed by either a catch or finally block.
+	Java catch block:
+	Handles exceptions by declaring the type of exception within the parameter.
+	The declared exception must be the parent class exception (e.g., Exception) or the specific generated exception type.
+	Multiple catch blocks can be used with a single try block.
+	Java finally block:
+	Executes important code (e.g., closing connections or streams).
+	Always executed, whether an exception is handled or not.
+	Follows a try or catch block.
+	Exception handling helps ensure graceful handling of errors, maintaining program stability and preventing abrupt termination.
+Day 2 - Logic Errors
+	Sometimes you’ll write code that compiles, and doesn’t throw any runtime exceptions, but still doesn’t work how you expected it to. This is almost always caused by a logic error
+	A logic error is when your program compiles and executes, but does the wrong thing or returns an incorrect result or no output when it should be returning an output.
+
+DEBUGGING
+	Debugging is a methodical process of finding and reducing the number of bugs(errors), or defects (malfunction pieces of code), in a computer program.
+	Importance: Debugging is crucial for programmers to identify and resolve errors in their code.
+	Debugging Process:
+	The debugging process can be divided into four main steps:
+	Localizing a Bug: Identifying the source or location of the error.
+	Classifying a Bug: Categorizing the error (compile error, runtime error, logic error).
+	Understanding a Bug: Gaining a complete understanding of the error before attempting to fix it.
+	Repairing a Bug: Modifying code to fix the error and documenting the fix.
+	General Debugging Techniques:
+	Exploiting Compiler Features: Using static code analysis provided by compilers to detect semantic problems and syntax errors.
+	Println() Debugging Technique: Adding print statements to track control flow and data values during code execution.
+	Logging: Automatically recording information messages or events to monitor the program's status and diagnose problems.
+	Defensive Programming and Assertions: Using assertions to check whether expressions are true at specific points in the code.
+	ACI Debugging Technique: Explaining the code to someone else to gain insights and rethink assumptions.
+	Reading the Code Through: Taking a break, reading the code, and annotating it carefully to understand its functionality.
+	The Debugger: Using a debugger to work through the code line-by-line, inspect variables, and control program execution.
+	Debugger Features:
+	Breakpoints: Stopping program execution at specific points to inspect variables or control code flow.
+	Stepping Through Code: Executing code line-by-line, stepping over or into functions.
+	Watchpoints: Stopping the code whenever a variable changes, even if the line doesn't reference the variable explicitly.
+	The passage emphasizes the importance of a methodical approach to debugging, the need for understanding errors before fixing them, and the variety of tools and techniques available to programmers for efficient debugging. It also points out the drawbacks of certain debugging practices, such as the ad-hoc use of print statements, and encourages the adoption of more systematic and reusable solutions.
+
+Day 3 - Common Errors in Java  
+Compiler Errors:
+o	"... Expected" Error:
+o	Cause: Missing semicolon or closing parenthesis.
+o	Solution: Check for missing punctuation, especially parentheses.
+"Unclosed String Literal" Error:
+o	Causes: Missing quotation marks, extending beyond a line, or unescaped quote marks.
+o	Solutions: Close the string literal with the needed quote mark, break long literals, or escape quote marks.
+"Illegal Start of an Expression" Error:
+o	Cause: Incorrect syntax or bad code.
+o	Solution: Review statements for errors in syntax and fix accordingly.
+"Cannot Find Symbol" Error:
+o	Causes: Misspelled identifier, undeclared variable, scope issues, or missing import.
+o	Solutions: Check spelling, declare variables, ensure correct scope, and import necessary classes.
+"Public Class XXX Should Be in File" Error:
+o	
+o	Cause: Mismatch between class name and filename.
+o	Solution: Name the class and file the same, ensure consistent case.
+"Incompatible Types" Error:
+o	Cause: Assignment mismatch between variable and expression types.
+o	Solutions: Use type conversion functions or modify code logic.
+"Invalid Method Declaration; Return Type Required" Error:
+o	
+o	Causes: Missing return type declaration or incorrect constructor name.
+o	Solutions: Add return type, declare void if necessary, or check constructor name.
+"Missing Return Statement" Error:
+o	
+o	Causes: Omitted return statement or void type not declared.
+o	Solutions: Add a return statement or declare the method as void.
+"Possible Loss of Precision" Error:
+o	
+o	Causes: Assigning a value that may lose precision.
+o	Solutions: Explicitly declare variable types or adjust code logic.
+"Reached End of File While Parsing" Error:
+o	
+o	Cause: Missing closing curly brace.
+o	Solution: Ensure proper code indentation and locate unbalanced braces.
+"Unreachable Statement" Error:
+o	
+o	Cause: Statement is written in a place where it cannot be executed.
+o	Solution: Remove or adjust code to make the statement reachable.
+
+"Variable <X> Might Not Have Been Initialized" Error:
+o	
+o	Cause: Local variable declared without initialization.
+o	Solution: Initialize variables before use, especially within if statements.
+"Operator ... Cannot be Applied to <X>" Error:
+o	
+o	Cause: Incorrect use of operators for certain types.
+o	Solution: Convert types appropriately, such as converting a string to an integer.
+"Inconvertible Types" Error:
+o	
+o	Cause: Illegal conversion attempt.
+o	Solution: Avoid illegal conversions, such as converting booleans to integers.
+"Missing Return Value" Error:
+o	
+o	Cause: Return statement includes an incorrect type.
+o	Solution: Ensure return statements match the expected type.
+"Cannot Return a Value From Method Whose Result Type Is Void" Error:
+o	
+o	Cause: Void method attempting to return a value.
+o	Solution: Change the method signature to match the return statement.
+"Non-Static Variable ... Cannot Be Referenced From a Static Context" Error:
+o	
+o	Causes: Attempting to access non-static variables from a static method.
+o	Solutions: Declare the variable as static or create an instance of a non-static object.
+"Non-Static Method ... Cannot Be Referenced From a Static Context" Error:
+o	
+o	Cause: Trying to call a non-static method in a static class.
+o	Solution: Create an instance of the class calling the non-static method.
+"(Array) <X> Not Initialized" Error:
+o	
+o	Cause: Declared array not initialized.
+o	Solution: Initialize arrays with the desired length.
+Runtime Errors:
+"ArrayIndexOutOfBoundsException" Error:
+o	
+o	Cause: Attempt to access an array index outside its bounds.
+o	Solution: Ensure correct array index bounds, using < instead of <=.
+"StringIndexOutOfBoundsException" Error:
+o	
+o	Cause: Attempt to access part of a string beyond its bounds.
+o	Solution: Check string indexes and correct parameters.
+"NullPointerException" Error:
+o	
+o	Causes: Using an object reference with a null value.
+o	Solutions: Ensure objects are properly initialized before use.
+
+
+"NoClassDefFoundError" Error:
+o	
+o	Causes: Missing class file or incorrect naming.
+o	Solutions: Check file location, match class and file names, and ensure case sensitivity.
+"NoSuchMethodFoundError" Error:
+o	
+o	Cause: Attempt to call a method that no longer has a definition.
+o	Solution: Check for typos in method declarations.
+"NoSuchProviderException" Error:
+o	
+o	Cause: Request for an unavailable security provider.
+o	Solutions: Check JRE configuration, Java home settings, and security provider entries.
+"AccessControlException" Error:
+o	
+o	Cause: Denied access to system resources.
+o	Solution: Review permissions and access rights.
+"ArrayStoreException" Error:
+o	
+o	Cause: Violation of array casting rules.
+o	Solution: Ensure proper object types for array elements.
+"Bad Magic Number" Error:
+o	
+o	Causes: Issues with class definition files.
+o	Solutions: Verify hexadecimal number, upload class files in binary mode, and ensure proper compilation.
+"Broken Pipe" Error:
+o	
+o	Causes: Issues with data stream closure.
+o	Solutions: Address disk space, RAM, and data stream integrity issues.
+"Could Not Create Java Virtual Machine" Error:
+o	
+o	Causes: Incorrect Java invocation or memory allocation.
+o	Solutions: Correct code declarations and allocate sufficient memory.
+"Class File Contains Wrong Class" Error:
+o	
+o	Causes: Incorrect class file location or naming.
+o	Solutions: Match source file and class names, check package statements, and file location.
+"ClassCastException" Error:
+o	
+o	Cause: Attempt to cast an object to the wrong class.
+o	Solution: Ensure proper type hierarchy and use Generics for compile-time checks.
+"ClassFormatError" Error:
+o	
+o	Causes: Issues with reading or interpreting a class file.
+o	Solutions: Verify file upload mode, check classpath, and avoid class loading issues.
+
+
+"ClassNotFoundException" Error:
+o	
+o	Causes: Missing class at runtime.
+o	Solutions: Verify file location, match class and file names, and check case sensitivity.
+"ExceptionInInitializerError" Error:
+o	
+o	Cause: Static initialization issues.
+o	Solution: Use getCause() to identify the root cause and address static initialization problems.
+"IllegalBlockSizeException" Error:
+o	
+o	Causes: Decryption issues related to block size.
+o	Solutions: Ensure proper encryption/decryption algorithms and handle message length correctly.
+"BadPaddingException" Error:
+o	
+o	Causes: Decryption issues related to padding.
+o	Solutions: Handle encrypted data properly and ensure correct padding during encryption.
+"IncompatibleClassChangeError" Error:
+o	
+o	Causes: Base class changes after child class compilation.
+o	Solutions: Ensure static on the main method, avoid illegal class usage, and recompile all classes.
+"FileNotFoundException" Error:
+o	
+o	Causes: Specified file not found.
+o	Solutions: Check file path and accessibility.
+"EOFException" Error:
+o	
+o	Cause: Unexpected end of file during input.
+o	Solution: Handle end-of-file situations gracefully.
+"UnsupportedEncodingException" Error:
+o	
+o	Cause: Unsupported character encoding.
+o	Solutions: Use supported character sets and check Java Virtual Machine compatibility.
+"SocketException" Error:
+o	
+o	Causes: Issues with creating or accessing a socket.
+o	Solutions: Address network port availability and memory constraints.
+"SSLException" Error:
+o	
+o	Cause: Failure in SSL-related operations.
+o	Solutions: Check certificates, server port configurations, and potential security-related issues.
+
+
+"MissingResourceException" Error:
+o	
+o	Causes: Missing resource or misconfigured properties file.
+o	Solutions: Verify classpath and properties file configuration.
+"NoInitialContextException" Error:
+o	
+o	Causes: Naming operation failure due to inability to create a connection.
+o	Solutions: Check credentials, JNDI implementation, and InitialContext configuration.
+"NoSuchElementException" Error:
+o	
+o	Cause: Attempt to access the next element when none is available.
+o	Solutions: Handle iteration correctly and check for element availability.
+"NoSuchFieldError" Error:
+o	
+o	Cause: Attempt to access a nonexistent field.
+o	Solutions: Ensure class consistency between compile and runtime and avoid changes to class definitions.
+"NumberFormatException" Error:
+o	
+o	Causes: Invalid string-to-numeric conversion.
+o	Solutions: Ensure valid numeric strings, handle leading/trailing spaces, and check for proper formatting.
+"TimeoutException" Error:
+o	
+o	Cause: Blocking operation times out.
+o	Solutions: Handle timeouts gracefully and adjust blocking operations as needed.
+Factory Method Patterns
+o	The Factory Method Pattern is a creational design pattern that provides an interface or an abstract class for creating objects but delegates the responsibility of instantiating objects to its subclasses. 
+o	This pattern allows a class to delegate the instantiation process to its subclasses, promoting loose coupling and flexibility in object creation.
+Here are the key components and concepts associated with the Factory Method Pattern:
+o	Interface or Abstract Class:
+o	The Factory Method Pattern begins with an interface or an abstract class that declares the factory method. This method is responsible for creating an object, but it does not specify which concrete class should instantiate the object.
+o	Concrete Classes:
+o	Subclasses of the interface or abstract class implement the factory method. Each subclass provides a specific implementation of the factory method to create an object. These concrete classes are responsible for instantiating particular types of objects.
+o	Client:
+o	The client is the class or code that uses the factory method to create objects. The client interacts with the interface or abstract class and relies on the factory method to obtain instances of objects.
+o	Use Cases for Factory Method Pattern:
+
+The Factory Method Pattern is particularly useful in the following scenarios:
+o	Unknown Subclasses: When a class doesn't know in advance which subclasses will be required to create objects. This is beneficial in situations where new subclasses can be added without modifying existing code.
+o	Subclass Specification: When a class wants its subclasses to specify the objects that are to be created. Each subclass provides its own implementation of the factory method, allowing for flexibility in object creation.
+o	Parent Class Chooses Creation: When a parent class decides the creation of objects for its subclasses. The parent class may define a generic algorithm but delegates the creation of specific objects to its subclasses, allowing for customization.
+o	Example:
+o	Consider a scenario where an application needs to create different types of documents, such as PDF documents and Word documents. The Factory Method Pattern can be employed by defining an interface or abstract class for the document creation, with subclasses for each type of document (e.g., PDFDocumentFactory and WordDocumentFactory). The client code can then use the factory method provided by the interface or abstract class to create instances of specific document types.
+Day 4 - Code Refactoring
+WHAT IS REFACTORING
+	Refactoring: Definition and Purpose:
+	Refactoring is a disciplined technique for restructuring an existing body of code without changing its external behavior. 
+	The main purpose is to improve the design, readability, and maintainability of the codebase without altering its observable functionality. 
+	The goal is to make the codebase more understandable, reduce complexity, and enhance its long-term viability.
+	Over time, software systems tend to accumulate technical debt, which can lead to decreased code quality, increased bugs, and difficulty in introducing new features. 
+	Refactoring aims to address these issues by systematically making small, incremental improvements to the codebase. It is a key practice in Agile methodologies and emphasizes continuous improvement throughout the development process.
+	Key Principles of Refactoring:
+	Non-Destructive Changes:
+
+	Refactoring focuses on making changes to the code that do not alter its external behavior. The goal is to improve the internal structure while ensuring that the system functions the same way before and after refactoring.
+	Small, Incremental Steps:
+	
+	Refactoring is performed in small, manageable steps. Each step involves a specific, well-defined transformation to the code. After each step, tests are run to ensure that the code still behaves as expected. This incremental approach minimizes the risk of introducing bugs.
+	Continuous Testing:
+	
+	Refactoring is accompanied by continuous testing. Automated tests are crucial to ensure that the code remains correct throughout the refactoring process. Tests provide a safety net, allowing developers to detect and address issues promptly.
+	Clear Goals and Design:
+	
+	Before refactoring, developers should have a clear understanding of the problem they are addressing, the benefits of the proposed changes, and any associated risks. The goal is to move the code toward a well-defined "goal state" with improved design and maintainability.
+	Phases of Refactoring:
+	
+	The refactoring process typically involves the following phases:
+	
+	Detecting a Problem:
+	
+	Identifying areas of the code that could benefit from improvement. This could be due to increased complexity, code smells, or difficulties in understanding and maintaining the code.
+	Characterizing the Problem:
+	
+	Understanding why a change is necessary, the potential benefits, and any associated risks. This phase involves assessing the impact of the proposed refactoring on the overall system.
+	Designing a Solution:
+	
+	Defining the "goal state" of the code. This phase involves planning the specific code transformations that will move the code toward the desired state. It's essential to have a clear vision of how the code should look after refactoring.
+	Modifying the Code:
+	
+	Implementing the planned code transformations in small, incremental steps. Each step should leave the code in a functional state, and tests should be run after each step to ensure correctness.
+	When Refactoring is Most Likely to be Used:
+	
+	Maintaining Code Quality:
+	
+	Refactoring is commonly used to maintain or improve code quality over time. As software evolves, developers may identify areas where the code can be enhanced for better readability, maintainability, and adherence to best practices.
+	Bug Fixes and Troubleshooting:
+	
+	When addressing bugs or troubleshooting issues, refactoring may be used to eliminate the root cause of the problem and improve the overall structure of the code to prevent similar issues in the future.
+	Introducing New Features:
+	
+	When adding new features to a codebase, refactoring can be applied to ensure that the existing structure accommodates the new functionality seamlessly. It helps in avoiding code duplication and maintaining a clean design.
+	Code Reviews:
+	
+	During code reviews, developers may identify opportunities for refactoring to align with coding standards, improve clarity, or eliminate redundant code.
+	Onboarding New Developers:
+	
+	Refactoring can be valuable when onboarding new developers to a project. It makes the codebase more understandable and reduces the learning curve for new team members.
+	In summary, refactoring is a proactive approach to code improvement that is applied continuously throughout the software development process. It is a fundamental practice for maintaining a healthy and sustainable codebase.
+
+
